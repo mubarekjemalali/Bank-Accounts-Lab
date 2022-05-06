@@ -1,0 +1,56 @@
+.container {
+
+    width: 80%;
+    margin: auto;
+    border: 1px solid #FC9D1E;
+
+
+}
+
+
+.heading {
+
+    background-color: #FC9D1E;
+    padding: 5px;
+}
+
+.heading h1 {
+    color: white;
+    margin: 20px 50px 20px 50px;
+    text-align: center;
+}
+
+.manage-accounts {
+
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#create-account-btn {
+    background-color: #FC9D1E;
+    color: white;
+    width: 25%;
+    margin-left: 27%;
+    height: 25px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#drop-down {
+    border: 1px solid #FC9D1E;
+    width: 160px;
+    height: 25px;
+    margin: 20px;
+}
+
+#amount {
+    border: 1px solid #FC9D1E;
+    width: 155px;
+    height: 25px;
+    margin-left: 63px;
+}
