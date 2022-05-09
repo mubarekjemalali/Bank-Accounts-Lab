@@ -1,27 +1,36 @@
-let createAccountBtn = document.getElementById("create-account-btn");
+
+window.onload = function () {
+    console.log(window.localStorage);
+    if (window.localStorage.accounts) {
+        let textarea = document.getElementById("textarea");
+        textarea.innerHTML = window.localStorage.accounts;
+
+    }
+}
 
 class Account {
+
     static accountInfoList = [];
 
-    constructor() {
-        let name = document.getElementById("drop-down");
-        let amount = document.getElementById("amount");
+    constructor(name, amount) {
 
         this.name = name;
         this.balance = amount;
+        Account.accountInfoList.push(this);
 
+        // console.log("account is created" + " " + Account.accountInfoList.length);
     }
 
 
-
-    accountInfo() {
-        let accounts;
+    static accountInfo() {
+        let accounts = " ";
 
         for (let i = 0; i < Account.accountInfoList.length; i++) {
-            accounts += "Account name: ", Account.accountInfoList[i]['name'], ",",
-                "Balance: ", Account.accountInfoList[i].balance, "\n";
+            accounts += "Account name: " + " ," + Account.accountInfoList[i]['name'] + ", "
+                + "Balance: " + ", " + Account.accountInfoList[i].balance + "\n";
         }
         return accounts;
+
     }
 
     deposite(amount) {
@@ -32,45 +41,3 @@ class Account {
     }
 
 }
-//createAccountBtn.onclick = new Account();
-
-function myfuncCreateAcc() {
-    var account = new Account;
-    Account.accountInfoList.push(account);
-    console.log(Account.accountInfoList.length);
-}
-
-
-createAccountBtn.addEventListener("click", myfuncCreateAcc);
-
-
-// createAccountBtn.onclick = Account.accountInfo;
-let textarea = document.getElementById("textarea");
-textarea.innerHTML = "Sard";
-console.log(textarea);
-
-//textarea.innerHTML = Account.accountInfo;
-
-// function newAccountInfo() {
-//     name = document.getElementById("drop-down").value;
-//     amount = document.getElementById("amount").value;
-//     console.log(amount);
-
-// }
-// let textarea = document.getElementById("textarea");
-// textarea.innerHTML = Account.accountInfo();
-
-// function accounts() {
-
-//     let textarea = document.getElementById("textarea");
-//     textarea.innerHTML = "he";
-
-//     for (let i = 0; i < Account.accountInfoList.length; i++) {
-//         textarea.innerHTML =
-//             "Account name: ", Account.accountInfoList[i]['name'], ",",
-//             "Balance: ", Account.accountInfoList[i].balance;
-//         console.log('Success');
-//     }
-// }
-
-

@@ -40,6 +40,17 @@
     border: 1px solid black;
 }
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 #textarea {
 
     border: 1px solid #FC9D1E;

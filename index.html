@@ -18,34 +18,21 @@
         <div class="manage-accounts">
             <h1> What do you want to do today?</h1>
 
-            <input class="buttons" id="create-new" type="button" value="Create new Account">
 
-            <div class="manage-accounts" style="display: none;">
-                <form id="createAccount" action="">
-                    <label for="name"> Account name: </label>
-                    <select name="name" id="drop-down">
-                        <option value="business">business</option>
-                        <option value="personal">personal</option>
-                        <option value="checking">checking</option>
-                        <option value="saving">saving</option>
-
-                    </select>
-                    <br>
-                    <label for="amount">Deposit:</label>
-                    <input id="amount" type="text" name="amount" value="">
-                    <br>
-                    <input id="create-account-btn" type="submit" value="Create Account">
-                </form>
-            </div>
+            <button class="buttons"><a href="create-account.html">Create new Account</a></button>
 
             <br>
-            <input class="buttons" id="deposit" type="button" value="Deposit">
+
+            <button class="buttons"><a href="deposite.html">Deposite</a></button>
+
             <br>
-            <input class="buttons" id="withdraw" type="button" value="Withdraw">
+
+            <button class="buttons"><a href="withdraw.html">Withdraw</a></button>
+
             <br>
         </div>
         <div class="list-accounts">
-            <textarea name="accounts-diplay" id="textarea" cols="30" rows="10">
+            <textarea name="accounts-diplay" id="textarea" cols="60" rows="10">
 
             </textarea>
         </div>
@@ -53,6 +40,8 @@
 
 
     <script src="index.js"></script>
+    <script src="index2.js"></script>
+
 </body>
 
 </html>
